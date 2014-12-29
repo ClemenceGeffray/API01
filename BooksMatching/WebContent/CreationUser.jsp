@@ -20,8 +20,12 @@
 	            <input type="text" id="adresseUser" name="adresseUser" value="" size="20" maxlength="20" />
 	            <br />
 	
-	            <label for="telephoneUser">Numéro de téléphone <span class="requis">*</span></label>
+	            <label for="telephoneUser">Numéro de téléphone<span class="requis">*</span></label>
 	            <input type="text" id="telephoneUser" name="telephoneUser" value="" size="20" maxlength="20" />
+	            <br />
+	            
+	            <label for="mdpUser">Mot de passe<span class="requis">*</span></label>
+	            <input type="password" id="mdpUser" name="mdpUser" value="" size="20" maxlength="20" />
 	            <br />
 	            
 	        </fieldset>

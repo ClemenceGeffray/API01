@@ -40,7 +40,8 @@ public class UserServlet extends HttpServlet {
 		DateTime dt = new DateTime();
 		DateTimeFormatter form = DateTimeFormat.forPattern("dd/MM/yyyy HH:mm:ss");
 		String date = dt.toString(form);
-		String statutCompte = "inactive"; //inactif par défaut & confirmation de qc pour l'activer ? 
+		String statutCompte = "inactive"; //inactif par défaut & confirmation de qc pour l'activer ?
+		String mdp = request.getParameter("mdpUser");
 		
 		String message;
 		if ( nom.trim().isEmpty() || adresse.trim().isEmpty() || telephone.trim().isEmpty() ) {
@@ -50,11 +51,13 @@ public class UserServlet extends HttpServlet {
         }
 		
 		User user = new User();
+		user.setId(id);
 		user.setNom(nom);
 		user.setAdresse(adresse);
 		user.setTelephone(telephone);
 		user.setDateCreation(date);
 		user.setStatutCompte(statutCompte);
+		user.setMdp(mdp);
 		
 		request.setAttribute("user", user);
 		request.setAttribute("message", message);

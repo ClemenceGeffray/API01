@@ -9,11 +9,13 @@
 <body>
 <p>${message }</p>
 <p>Affichage de l'utilisateur</p><br><br>
+ID : ${user.id}<br>
 Nom : ${user.nom }<br>
 Adresse : ${user.adresse }<br>
 Telephone : ${user.telephone }<br>
 Date de création du compte : ${user.dateCreation }<br>
 Statut du compte : ${user.statutCompte }<br>
+Mot de passe : ${user.mdp }<br>
 
 </body>
 </html>

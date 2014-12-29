@@ -2,12 +2,20 @@ package com.UTC.BooksMatching.Beans;
 
 
 public class User {
+	private int id;
 	private String nom; 
 	private String adresse; 
 	private String telephone;
 	private String dateCreation;
 	private String statutCompte;
+	private String mdp;
 	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getNom() {
 		return nom;
 	}
@@ -37,6 +45,12 @@ public class User {
 	}
 	public void setStatutCompte(String statutCompte) {
 		this.statutCompte = statutCompte;
+	}
+	public String getMdp() {
+		return mdp;
+	}
+	public void setMdp(String mdp) {
+		this.mdp = mdp;
 	}
 	
 }
